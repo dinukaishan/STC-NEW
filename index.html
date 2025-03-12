@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Record</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Attendance System</h1>
+        </header>
+
+        <section class="form-section">
+            <form id="attendanceForm">
+                <label for="epfNo">EPF No:</label>
+                <input type="text" id="epfNo" name="epfNo" required>
+
+                <label for="name">Employee Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="attendanceDate">Date:</label>
+                <input type="date" id="attendanceDate" name="attendanceDate" required>
+
+                <label for="timeIn">Time In:</label>
+                <input type="time" id="timeIn" name="timeIn" required>
+
+                <label for="timeOut">Time Out:</label>
+                <input type="time" id="timeOut" name="timeOut" required>
+
+                <label for="visitTippingBar">Visit Tipping Bar:</label>
+                <input type="text" id="visitTippingBar" name="visitTippingBar">
+
+                <button type="submit">Add Record</button>
+            </form>
+        </section>
+
+        <section class="attendance-table">
+            <h2>Attendance Records</h2>
+            <table id="attendanceTable">
+                <thead>
+                    <tr>
+                        <th>EPF No</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Time In</th>
+                        <th>Time Out</th>
+                        <th>Visit Tipping Bar</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section class="export-section">
+            <button id="exportCSV">Export CSV</button>
+            <button id="exportHTML">Export HTML</button>
+            <button id="exportDOC">Export DOC</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
